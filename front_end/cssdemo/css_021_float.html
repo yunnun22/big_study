@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        float
+        1.float는 박스의 위피를 부모요소의 안에서 완쪽 또는 오른쪽 이동시키는 기능이다.
+        2. float가 지정된 박스는 문서의 일반적인 흐름에 영행을 받지 않으면서 이동된 위치에 떠 있다.*/
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+
+      .box2 {
+        background-color: green;
+        float: left;
+      }
+
+      .box3 {
+        background-color: blue;
+        float: right;
+      }
+
+      p {
+        clear: both; /* float해제*/
+      }
+
+      div.wrap p {
+        clear: both;
+      }
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <p>inline</p>
+    </div>
+
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/gosu.jpg" alt="고수영화배우" />
+      <span>
+        A씨가 글과 함께 올린 사진을 보면 펜션 이용을 위한 안내문이 담겼다.
+        ‘키친룸 이용안내’라는 제목의 안내문에서는 “냄새나는 음식을 객실 내에서
+        요리할 경우 퇴실 후 냄새가 전혀 빠지지 않는다”며 “고기, 생선, 튀김,
+        찌개, 국 등 냄새 나는 모든 음식은 조리가 절대 불가하다”고 적혔다. 뿐만
+        아니라 안내문에 따르면 생일 초를 사용하거나 펜션 내에 해산물을 반입하는
+        것도 금지 사항이다.
+      </span>
+    </div>
+  </body>
+</html>
